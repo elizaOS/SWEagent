@@ -239,27 +239,15 @@ tools:
 ```bash
 # OpenAI GPT-4
 export OPENAI_API_KEY=your_key
-npx sweagent run --agent.model.name gpt-4o ...
+npx sweagent run --agent.model.name gpt-5 ...
 
 # Anthropic Claude
 export ANTHROPIC_API_KEY=your_key
-npx sweagent run --agent.model.name claude-3-sonnet-20241022 ...
+npx sweagent run --agent.model.name claude-4-sonnet ...
 
 # Local/Open-source models via LiteLLM
 npx sweagent run --agent.model.name ollama/codellama ...
 ```
-
-## 📈 Performance
-
-The TypeScript implementation maintains full parity with the Python version:
-
-| Benchmark | Python | TypeScript |
-|-----------|--------|------------|
-| SWE-bench Lite | ✅ | ✅ |
-| SWE-bench Verified | ✅ | ✅ |
-| Multimodal Support | ✅ | ✅ |
-| Parallel Execution | ✅ | ✅ |
-| Cost Tracking | ✅ | ✅ |
 
 ## 🔧 Advanced Usage
 
